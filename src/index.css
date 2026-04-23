@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-red: #D7262E;
+  --color-brand-black: #111111;
+  --color-brand-bg: #FFFFFF;
+  --color-brand-soft: #F7F7F7;
+  --color-brand-text: #333333;
+  --color-brand-muted: #555555;
+  --color-brand-border: #E5E5E5;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  --radius-brand: 2px;
+}
+
+@layer base {
+  body {
+    @apply text-brand-text bg-brand-bg;
+  }
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4;
+}
